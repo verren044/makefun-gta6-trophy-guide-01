@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5</p>
+    <h1>Leonida Platinum</h1>
+    <p class="sub">The offline trophy guide &amp; tracker — 55 trophies · 1 platinum · 2 gold · 6 silver · 46 bronze · 28 hidden until earned · no online trophies</p>
+  </div>
+  <div class="progress" id="progressBox" aria-live="polite">
+    <p class="big"><span id="earnedCount">0</span><span class="of"> / 55 earned</span></p>
+    <div class="bar"><span id="progressFill"></span></div>
+    <p class="pct" id="progressPct">0% to platinum</p>
+  </div>
+</header>
+<nav class="tabs" aria-label="Views">
+  <a href="#/" id="tab-checklist" class="tab">Checklist</a>
+  <a href="#/roadmap" id="tab-roadmap" class="tab">Roadmap to Platinum</a>
+  <a href="#/missables" id="tab-missables" class="tab">Missables <span class="count-pill">15</span></a>
+</nav>
+<section class="controls" aria-label="Filters and save">
+  <label class="ctl search">Search <input id="search" type="search" placeholder="Trophy name or description…" autocomplete="off"></label>
+  <label class="ctl">Kind
+    <select id="kind">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="missable">Missable</option>
+      <option value="collectibles">Collectibles</option>
+      <option value="activities">Activities</option>
+      <option value="stranger">Stranger missions</option>
+      <option value="crime">Crime</option>
+      <option value="money">Money</option>
+      <option value="exploration">Exploration</option>
+      <option value="online">Online</option>
+    </select>
+  </label>
+  <label class="ctl">Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="ctl">Show
+    <select id="status">
+      <option value="all">All trophies</option>
+      <option value="earned">Earned</option>
+      <option value="todo">To do</option>
+    </select>
+  </label>
+  <label class="ctl check"><input id="spoiler" type="checkbox" checked> Hide story spoilers</label>
+  <span class="spacer"></span>
+  <button id="exportBtn" type="button">Export progress</button>
+  <label class="importBtn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+</section>
+<main>
+  <section id="view-checklist" class="view">
+    <div class="layout">
+      <div class="listCol">
+        <p class="listMeta" id="listMeta"></p>
+        <p class="empty" id="onlineNote" hidden>There are no online trophies. All 55 GTA VI trophies are single-player and offline — nothing to show under Online.</p>
+        <p class="empty" id="noMatch" hidden>No trophies match these filters.</p>
+        <ul class="rows" id="rows"></ul>
+      </div>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+  <section id="view-roadmap" class="view" hidden>
+    <p class="pageIntro">Roadmap to Platinum — built from the official descriptions: story first, then the open world, then the grind, then 100%. Four stages, in order. No mission replay, so keep a manual save at the start of every chapter and one before the final mission.</p>
+    <div class="stages" id="stages"></div>
+  </section>
+  <section id="view-missables" class="view" hidden>
+    <p class="pageIntro warn">15 missable trophies. GTA VI has no mission replay and no New Game Plus, so a trigger tied to a story moment, a stranger strand or a place that closes after a chapter cannot be re-done — only a reloaded save or a new playthrough brings it back. Flags below are our own reading of the official descriptions, not confirmed in-game. The one confirmed missable is Positive Mental Attitude (Chapter 1).</p>
+    <div class="missGrid" id="missGrid"></div>
+  </section>
+</main>
+<footer>
+  <p>Names, descriptions and grades are the official PlayStation 5 list as Exophase and PSNProfiles publish it (18 Nov 2026). Every guide is written for this entry in our own words and cites its sources beside each trophy; steps beyond the official description are our own reading, unverified in-game. This guide works fully offline and fetches nothing — progress lives only in your browser (localStorage) unless you export it.</p>
+  <p>Sources: Exophase · PSNProfiles · Output Lag. No Rockstar artwork or logo is used; the look is our own.</p>
+</footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
